@@ -1,4 +1,11 @@
-mountmedia (0.24) unstable; urgency=medium
+mountmedia (0.24+kui1) kui; urgency=medium
+
+  * Non-maintainer upload.
+  * disable installer automount system disk parts 
+
+ -- Haitao Pan <panhaitao@deepin.com>  Thu, 20 Apr 2017 22:02:09 -0400
+
+mountmedia (0.24) kui; urgency=medium
 
   [ Colin Watson ]
   * Use HTTPS for Vcs-* URLs, and link to cgit rather than gitweb.

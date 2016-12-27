@@ -10,17 +10,7 @@ fi
 MNT=/media
 
 devlist() {
-	if [ "$WANTFLOPPY" ]; then
-		list-devices floppy
-	else
-		# Ordering: First look for USB media (also finding whole fixed
-		# disks, but that's ok). Then look for floppies. Finally, try
-		# scanning partitions last.
-		list-devices disk
-		list-devices maybe-usb-floppy
-		list-devices floppy
-		list-devices partition
-	fi
+	list-devices usb-partition
 }
 
 media_mounted() {
